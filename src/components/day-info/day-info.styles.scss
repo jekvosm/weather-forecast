@@ -1,0 +1,19 @@
+.card-item {
+  // color: #f0f4ef;
+  // background: linear-gradient(
+  //   90deg,
+  //   hsla(171, 87%, 67%, 1) 0%,
+  //   rgb(112, 121, 255) 100%
+  // );
+
+  border-radius: 10px;
+  transform: scale(1);
+  box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+  transition: box-shadow 0.5s, transform 0.5s;
+
+  &:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+  }
+}

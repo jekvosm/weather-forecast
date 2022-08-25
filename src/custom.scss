@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+// @import '../node_modules/bootstrap/scss/mixins';
+
+// $altprimary: #0074d9;
+
+$custom-colors: (
+  'custom-primary': $teal-100,
+  'custom-secondary': $gray-300,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$custom-spacers: (
+  6: $spacer * 6,
+);
+
+$spacers: map-merge($spacers, $custom-spacers);
+
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: $cyan-300;
+}
